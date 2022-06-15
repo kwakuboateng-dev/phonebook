@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @phonebook_crud %>
+
+<div>
+  <%= link_to "Edit this phonebook crud", edit_phonebook_crud_path(@phonebook_crud) %> |
+  <%= link_to "Back to phonebook cruds", phonebook_cruds_path %>
+
+  <%= button_to "Destroy this phonebook crud", @phonebook_crud, method: :delete %>
+</div>
