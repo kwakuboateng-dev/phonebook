@@ -1,0 +1,37 @@
+<%= form_with(model: phonebook_crud) do |form| %>
+  <% if phonebook_crud.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(phonebook_crud.errors.count, "error") %> prohibited this phonebook_crud from being saved:</h2>
+
+      <ul>
+        <% phonebook_crud.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :first_name, style: "display: block" %>
+    <%= form.text_field :first_name %>
+  </div>
+
+  <div>
+    <%= form.label :last_name, style: "display: block" %>
+    <%= form.text_field :last_name %>
+  </div>
+
+  <div>
+    <%= form.label :phone_number, style: "display: block" %>
+    <%= form.text_field :phone_number %>
+  </div>
+
+  <div>
+    <%= form.label :address, style: "display: block" %>
+    <%= form.text_field :address %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>
