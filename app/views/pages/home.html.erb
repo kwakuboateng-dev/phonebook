@@ -1,5 +1,18 @@
 <div class="container">
-<h1>Phonebook</h1>
-<p>Create or Search for Contacts</p>
-<%= link_to 'About', about_path %>
+  	<div class="card text-center">
+  <div class="card-header">
+    <!--Featured -->
+  </div>
+  <div class="card-body">
+    <h4 class="card-title">Store Them Here.</h4>
+    <p class="card-text">Create or view your Contacts.</p>
+   	
+   	<%= link_to "New contact", new_contact_path, class:"btn btn-success" %></td>
+    <%= link_to 'Contacts', contacts_path, class:"btn btn-secondary"%></td>
+  </div>
+  <div class="card-footer text-muted">
+    Powered by @koboateng
+  </div>
 </div>
+
+  
